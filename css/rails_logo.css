@@ -1,0 +1,31 @@
+
+/* Ensure the body takes the full height and width of the viewport */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+}.rails_logo {
+    height: 16vmin;
+    width: 16vmin;
+    background-color: rgb(213, 21, 21);
+    border-radius: 50%;
+    margin-top: 3vmin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+    
+    }
+    .rails_logo:hover{
+      background-color: rgb(20, 18, 25);
+    }
+    .logo_img{
+        height: 80%;
+        width: 82%;
+        object-fit: contain;
+        margin-bottom: 9px;
+    }
