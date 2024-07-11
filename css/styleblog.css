@@ -19,7 +19,7 @@ header {
 }
 
 header .logo {
-    height: 150px; /* Increased logo size */
+    height: 160px; /* Increased logo size */
     display: block;
     margin: 0 auto; /* Center align the logo */
 }
