@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.announcement {
+    background-color: #f8e8e8;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: #ffffff;
+}
+
+#hero h1 {
+    color: #cc0000;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.release-info {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
