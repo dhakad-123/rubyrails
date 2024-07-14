@@ -125,7 +125,7 @@ p {
 video {
     width: 100%; /* Make the video fill its container */
     height: auto; /* Maintain aspect ratio */
-    max-width: 1600px; /* Limit maximum width of the video */
+    max-width: 1000px; /* Limit maximum width of the video */
 }
 
 .heading-section {
@@ -177,7 +177,7 @@ video {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
     padding: 30px; /* General padding for top, bottom, left, right */
     border-radius: 8px;
-    max-width: 1400px; /* Increase max-width for a more rectangular shape */
+    max-width: 1200px; /* Increase max-width for a more rectangular shape */
     margin: -100px auto 60px auto; /* Top, auto (left/right to center), and bottom margin */
     text-align: left;
     position: relative;
@@ -218,7 +218,7 @@ video {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
     padding: 30px; /* General padding for top, bottom, left, right */
     border-radius: 8px;
-    max-width: 1500px; /* Increase max-width for a more rectangular shape */
+    max-width: 1200px; /* Increase max-width for a more rectangular shape */
     margin: 40px auto 60px auto; /* Top and bottom margin adjusted to create space */
     text-align: left;
     position: relative;
@@ -455,7 +455,7 @@ video {
 @media (min-width: 1024px) {
     .cards__container {
         grid-template-columns:repeat(3, 1fr);
-        margin-left: 630px;
+        margin-left: 60px;
         margin-right: 60px
     }
 }
@@ -503,36 +503,33 @@ video {
 }
 
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer ul li {
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-
-}
 
 /* Footer styles */
 footer {
-    background-color:transparent; /* Make background transparent */
-    padding: 20px 0; /* Adjust padding as needed */
-}
+    position: relative;
+    background: url('images/Ruby_on_Rails-Logo.wine.svg') center top no-repeat;
+    background-size: cover;
+    padding: 100px 0; /* Increase padding to move content down */
+  }
+  
+  .curve-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .logo-container {
+    margin-top: 10px; /* Add margin to move content further down */
+  }
+  
+  ul {
+    margin-top: 10px; /* Add margin to move content further down */
+  }
+  
+
 
 footer ul {
     list-style-type: none;
