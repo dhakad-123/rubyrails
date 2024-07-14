@@ -12,62 +12,62 @@
             <img src="images/logo.png" alt="Rails Logo" class="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Everything</a></li>
-                    <li><a href="#">Releases</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="#" id="everything">Everything</a></li>
+                    <li><a href="#" id="releases">Releases</a></li>
+                    <li><a href="#" id="news">News</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <section class="news">
-            <div class="container">
-                <article class="news-item">
+            <div class="container" id="news-container">
+                <article class="news-item" id="item1">
                     <p>July 5, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/7/5/this-week-in-rails">Configurable compressor for encryption, Rack 3 streaming and more</a></h2>
                     <p>Hi, Wojtek here. See the short list of changes from this past week. Add compressor option to Active Record encryption ActiveRecord::Encryption::Encryptor now supports a compressor option to customize the compression...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item2">
                     <p>June 28, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/28/this-week-in-rails">Immutable Rails Cache Header, Local Assigns in Strict Local Templates, Threaded Active Storage Mirror Service</a></h2>
                     <p>Hi, it's zzak. Let's explore this week's changes in the Rails codebase. Support "immutable" directive in Cache-Control This PR adds a new option to the expires_in method to support the...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item3">
                     <p>June 21, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/21/this-week-in-rails">New database sharding methods, improved Active Record Migration Docs, caching improvements for ActiveStorage and more!</a></h2>
                     <p>Hey everyone, Happy Friday! Vipul here with the latest updates for This Week in Rails. Let’s dive in. Improved Active Record Migration documentation The Rails Foundation documentation team continues on...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item4">
                     <p>June 14, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/14/this-week-in-rails">New transaction event, bugfixes and more!</a></h2>
                     <p>Hi, it’s Greg. Let’s explore this week’s changes in the Rails codebase. Only sanitize content attribute when present in attachments A recent security fix introduced sanitizing the content attribute of...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item5">
                     <p>June 13, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/13/tablecheck-newest-contributing-member">Meet TableCheck, the newest Contributing member of the Rails Foundation</a></h2>
                     <p>Amid the work taking place to improve the Rails documentation and prepare for Rails World, we are happy to take a break and introduce the newest Contributing member of the...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item6">
                     <p>June 7, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/7/this-week-in-rails">Global strict loading mode setting, route draw deferring and more</a></h2>
                     <p>Hi, Wojtek here. Let’s explore this week’s changes in the Rails codebase. Rails security releases Rails Versions 6.1.7.8, 7.0.8.4, 7.1.3.4, and 7.2.0.beta2 have been released with a security issue fix....</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item7">
                     <p>June 4, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/6/4/Rails-Versions-6-1-7-8-7-0-8-4-and-7-1-3-4-have-been-released">Rails Versions 6.1.7.8, 7.0.8.4, 7.1.3.4, and 7.2.0.beta2 have been released!</a></h2>
                     <p>Hi everyone! Rails Versions 6.1.7.8, 7.0.8.4, 7.1.3.4, and 7.2.0.beta2 have been released! These are security releases, so please upgrade at your earliest convenience. Here is a list of security issues...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item8">
                     <p>May 31, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/5/31/this-week-in-rails">Propshaft default for Rails 8, Guides updates, transaction.active_record events, and more!</a></h2>
                     <p>Hi, it’s zzak. Let’s explore this week’s changes in the Rails codebase. Rails World 2024 speaker lineup announced! As well as another small run of tickets going live on June...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item9">
                     <p>May 29, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/5/29/Rails-7-2-0-beta-1-has-been-released">Rails 7.2 Beta 1: Better production defaults, Dev containers, new guides design, and more!</a></h2>
                     <p>The train for the Rails 7.2 release is leaving the station and we’re excited to announce the first beta release of Rails 7.2! There has been close to 2,500 commits...</p>
                 </article>
-                <article class="news-item">
+                <article class="news-item" id="item10">
                     <p>May 28, 2024</p>
                     <h2><a href="https://rubyonrails.org/2024/5/28/rails-world-speaker-list">The Rails World 2024 speaker list is live</a></h2>
                     <p>The second edition of Rails World is fast approaching, so we are excited to share with you the list of speakers joining us in Toronto this year. These speakers will...</p>
@@ -81,6 +81,6 @@
             <p>© Ruby on Rails</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="javascript/blogscript.js"></script>
 </body>
 </html>
