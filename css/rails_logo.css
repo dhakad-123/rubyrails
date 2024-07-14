@@ -29,3 +29,32 @@ body, html {
         object-fit: contain;
         margin-bottom: 9px;
     }
+    .company-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+    }
+    
+    .company-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .company-section p {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 40px;
+    }
+    
+    .company-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .company-logos img {
+        max-width: 150px;
+        height: auto;
+    }
+    

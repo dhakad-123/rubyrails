@@ -3,42 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby on Rails Clone</title>
+    <title>Ruby on Rails</title>
     <link rel="stylesheet" href="/rubyrails/css/style.css">
 </head>
 <body>
     <header>
-        <div class="announcement">
-            <p>Rails World is sold out. See you in Toronto Sept 26 & 27.</p>
-        </div>
-        <nav>
+        <div class="top-banner">Rails World is sold out. See you in Toronto Sept 26 & 27.</div>
+        <nav class="navbar">
             <ul>
                 <li><a href="#">Guides</a></li>
                 <li><a href="#">API</a></li>
                 <li><a href="#">Forum</a></li>
                 <li><a href="#">Contribute</a></li>
+                <li><a href="#"><img src="/rubyrails/images/logo.png" alt="Rails Logo" class="logo"></a></li>
                 <li><a href="#">Foundation</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Jobs</a></li>
             </ul>
         </nav>
-        <div class="logo">
-            <img src="./images/logo.png" alt="Rails Logo"> 
-        </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Compress the complexity of modern web apps.</h1>
-            <p>Learn just what you need to get started, then keep leveling up as you go. <strong>Ruby on Rails scales from HELLO WORLD to IPO.</strong></p>
-            <div class="release-info">
-                <p>Rails 7.1.3.4 — released June 4, 2024</p>
-            </div>
-        </section>
+      <h1 style="font-size: 5.2em; text-align: center;">
+        Compress the complexity of</h1>
+         <h1>modern web apps.</h1>
+        <p style="font-size: 3.2em;text-align: center">Learn just what you need to get started, then keep leveling up as you go. <strong>Ruby on Rails scales from HELLO WORLD to IPO.</strong></p>
+        <p class="version">Rails 7.1.3.4 — released June 4, 2024</p>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <video poster="/rubyrails/images/video.png" width="1920" height="1080" controls>
+                <source src="https://d1snj8sshb5u7m.cloudfront.net/Rails7.mp4" type="video/mp4">
+                <track kind="captions" label="English" src="/assets/videos/rails7-screencast-english.vtt" srclang="en" default="false">
+            </video>
+        </div>
+
+        <div class="heading-section">
+          <h1 style="font-size: 5.2em; text-align: center;">You're in good company.</h1>
+          <p class="highlighted-text">Over the past two decades, Rails has taken countless companies to millions of users and billions in market valuations.</p>
+
+        </div>
+
+        <div class="company-logos">
+            <a href="https://basecamp.com" target="_blank"><img src="/rubyrails/images/basecamp2.png" alt="Basecamp"></a>
+            <a href="https://hey.com" target="_blank"><img src="/rubyrails/images/hey.png" alt="HEY"></a>
+            <a href="https://github.com" target="_blank"><img src="/rubyrails/images/github.png" alt="GitHub"></a>
+            <a href="https://shopify.com" target="_blank"><img src="/rubyrails/images/shopify.png" alt="Shopify"></a>
+            <a href="https://instacart.com" target="_blank"><img src="/rubyrails/images/instacart.png" alt="Instacart"></a>
+            <a href="https://dribbble.com" target="_blank"><img src="/rubyrails/images/dribbble2.png" alt="Dribbble"></a>
+            <a href="https://hulu.com" target="_blank"><img src="/rubyrails/images/hulu2.png" alt="Hulu"></a>
+            <a href="https://zendesk.com" target="_blank"><img src="/rubyrails/images/zendesk2.png" alt="Zendesk"></a>
+            <a href="https://airbnb.com" target="_blank"><img src="/rubyrails/images/airbnb2.png" alt="Airbnb"></a>
+            <a href="https://squareup.com" target="_blank"><img src="/rubyrails/images/square2.png" alt="Square"></a>
+            <a href="https://kickstarter.com" target="_blank"><img src="/rubyrails/images/kickstarter.png" alt="Kickstarter"></a>
+            <a href="https://heroku.com" target="_blank"><img src="/rubyrails/images/heroku.png" alt="Heroku"></a>
+            <a href="https://cookpad.com" target="_blank"><img src="/rubyrails/images/cookpad.jpeg" alt="Cookpad"></a>
+            <a href="https://doximity.com" target="_blank"><img src="/rubyrails/images/doximity.png" alt="Doximity"></a>
+            <a href="https://intercom.com" target="_blank"><img src="/rubyrails/images/intercom.png" alt="Intercom"></a>
+            <a href="https://fleetio.com" target="_blank"><img src="/rubyrails/images/fleetio2.jpeg" alt="Fleetio"></a>
+        </div>
+
+       <p style="font-size: 2.0em; text-align: center; font-weight: 800; color: rgb(75, 73, 73); margin-left: 520px;margin-right: 400px;"> These are just a few of the big names.
+       <strong>There have been many hundreds of thousands of apps created with Rails since its inception</strong></p>
+
+        <div class="heading-section grey-background">
+          <h1 style="font-size: 5.2em; text-align: center;">Building it together.</h1>
+            <p>Over six thousand people have <a href="https://contributors.rubyonrails.org">contributed code to Rails</a>, and many more have served the community through evangelism, documentation, and bug reports. Join us!</p>
+           <p style ="font-size: 1.99em; font-weight: 800;"> <a href="/community" class="styled-link">Meet the Rails team ></a></p>
+        </div>
+
+        <div class="heading-section white-box">
+          <h1 style="font-size: 5.2em; text-align: center;">Everything you need.</h1>
+            <p style="font-size: 2.5em;"><strong>Rails is a full-stack framework.</strong> It ships with all the tools needed to build amazing web apps on both the front and back end.</p>
+            <p style="font-size: 1.5em;">Rendering HTML templates, updating databases, sending and receiving emails, maintaining live pages via WebSockets, enqueuing jobs for asynchronous work, storing uploads in the cloud, providing solid security protections for common attacks. Rails does it all and so much more.</p>
+        </div>
+
+
+        <div class="code-section">
+          <div class="code-container">
+              <div class="code-block">
+                  <img src="/rubyrails/images/ss1.png" alt="Code Snippet 1">
+              </div>
+              <div class="code-description">
+                  <h3>Active Records make modeling easy.</h3>
+                  <p>Databases come to life with business logic encapsulated in rich objects...</p>
+              </div>
+          </div>
+          <div class="code-container">
+              <div class="code-block">
+                  <img src="/rubyrails/images/ss2.png" alt="Code Snippet 2">
+              </div>
+              <div class="code-description">
+                  <h3>Action Controllers handle all requests.</h3>
+                  <p>Controllers expose the domain model to the web, process incoming parameters...</p>
+              </div>
+          </div>
+          <div class="code-container">
+              <div class="code-block">
+                  <img src="/rubyrails/images/ss3.png" alt="Code Snippet 3">
+              </div>
+              <div class="code-description">
+                  <h3>Action Views mix Ruby and HTML.</h3>
+                  <p>Templates can use the full versatility of Ruby, excessive code is extracted...</p>
+              </div>
+          </div>
+          <div class="code-container">
+              <div class="code-block">
+                  <img src="/rubyrails/images/ss4.png" alt="Code Snippet 4">
+              </div>
+              <div class="code-description">
+                  <h3>Action Dispatch routes URLs.</h3>
+                  <p>Configure how URLs connect to the controllers using the routing domain language...</p>
+              </div>
+          </div>
+      </div>
+      
+      
+
+        <div class="heading-section white-box2">
+        <h1 style="font-size: 5.2em; text-align: center;">Optimized for happiness.</h1>
+            
+        <p style="font-size: 2.5em;">Rails has united and cultivated a strong tribe around a <strong>wide set of heretical thoughts</strong> about the nature of programming and programmers. Understanding these thoughts will help you understand the design of the framework.</p>
+        </p>
+        
+       <center> <p style ="font-size: 1.99em; font-weight: 800;"> <a href="/docraine" class="styled-link">Read the rails docraine ></a></p></center>
+      </div>
+
     </main>
+
+    
+<div class="heading common-padding--bottom-small common-padding--top">
+  <div class="container">
+    <div class="heading__body">
+      <div class="heading__headline common-headline">
+        <h1>Let’s get started.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cards common-padding--bottom-small">
+  <div class="container">
+    <div class="cards__container">
+      <div class="card">
+        <a href="https://guides.rubyonrails.org">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Learning</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>Read the guides.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>Learn what the frameworks can do and how they fit together.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/rails/rails">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Contributing</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>Contribute on GitHub.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>File bug reports and make pull-requests.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/blog">
+          <div class="card__body">
+            <div class="card__label">
+              <h6>Keeping up</h6>
+            </div>
+
+            <div class="card__headline">
+              <h3>See what’s new.</h3>
+            </div>
+
+            <div class="card__content">
+              <p>The latest releases and updates on development.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text text--align-center common-padding--bottom">
+  <div class="container">
+    <div class="text__body">
+      <div class="text__content common-content common-content--size-large">
+        <p>Learn more about <a href="https://hotwired.dev">Hotwire</a>, the default front-end framework for Rails.</p>
+
+        <p><strong>Stay up to date</strong> with Rails on <a href="https://twitter.com/rails" class="icon icon--twitter">Twitter</a>, <a href="https://www.youtube.com/@railsofficial" class="icon icon--youtube">YouTube</a>, and <a href="https://world.hey.com/this.week.in.rails" class="icon icon--world">This Week in Rails</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <footer>
-        <p>&copy; 2024 Ruby on Rails</p>
+      <div class="curve-container">
+        <svg viewBox="0 0 1440 320">
+            <path fill="rgb(241, 231, 229)" fill-opacity="1" d="M0,320L0,240Q500,50,1440,120L1440,320Z"><a href=""><img src="images/Ruby_on_Rails-Logo.wine.svg" alt="" class="footer-logo"/></a></path>
+        </svg>
+      </div>
+      <div class="footer-content">
+        <div class="logo-container">
+            <a href="#"><img src="/rubyrails/images/rails.png" alt="" class="footer-logo"/></a>
+        </div>
+        <ul>
+            <li><a href="/conduct">Conduct</a></li>
+            <li><a href="/maintenance">Maintenance</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/trademarks">Trademarks</a></li>
+            <li><a href="https://opensource.org/licenses/MIT">License</a></li>
+        </ul>
     </footer>
-    <script src="script.js"></script>
+    
+
 </body>
 </html>
