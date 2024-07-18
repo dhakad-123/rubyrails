@@ -10,29 +10,720 @@
 <body>
     <div class="container">
         <aside class="sidebar">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+            </div>
+
             <ul>
                 <li>
                     <a href="#" onclick="toggleFiles(event)">
                         <span id="arrow" class="arrow-right"></span> Files
                     </a>
                     <ul id="filesList" class="hidden">
-                        <li><a href="#">actioncable</a></li>
-                        <li><a href="#">actionmailbox</a></li>
-                        <li><a href="#">actionmailer</a></li>
-                        <li><a href="#">actionpack</a></li>
-                        <li><a href="#">actiontext</a></li>
-                        <li><a href="#">actionview</a></li>
-                        <li><a href="#">activejob</a></li>
-                        <li><a href="#">activemodel</a></li>
-                        <li><a href="#">activerecord</a></li>
-                        <li><a href="#">activestorage</a></li>
-                        <li><a href="#">activesupport</a></li>
-                        <li><a href="#">railties</a></li>
+                        <li><a href="#">Actioncable</a></li>
+                        <li><a href="#">Actionmailbox</a></li>
+                        <li><a href="#">Actionmailer</a></li>
+                        <li><a href="#">Actionpack</a></li>
+                        <li><a href="#">Actiontext</a></li>
+                        <li><a href="#">Actionview</a></li>
+                        <li><a href="#">Activejob</a></li>
+                        <li><a href="#">Activemodel</a></li>
+                        <li><a href="#">Activerecord</a></li>
+                        <li><a href="#">Activestorage</a></li>
+                        <li><a href="#">Activesupport</a></li>
+                        <li><a href="#">Railties</a></li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="#" onclick="coreFiles(event)">
+                        <span id="corearrow" class="arrow-right"></span> Core Extensions
+                    </a>
+                    <ul id="coreList" class="hidden">
+                        <li><a href="#">Array</a></li>
+                        <li><a href="#">Benchmark</a></li>
+                        <li><a href="#">BigDecimal</a></li>
+                        <li><a href="#">Class</a></li>
+                        <li><a href="#">Date</a></li>
+                        <li><a href="#">DateAndTime</a></li>
+                        <li><a href="#">Date Time</a></li>
+                        <li><a href="#">Delegator</a></li>
+                        <li><a href="#">Digest</a></li>
+                        <li><a href="#">ERB</a></li>
+                        <li><a href="#">Enumerable</a></li>
+                        <li><a href="#">Exception</a></li>
+                        <li><a href="#">FalseClass</a></li>
+                        <li><a href="#">File</a></li>
+                        <li><a href="#">Float</a></li>
+                        <li><a href="#">Hash</a></li>
+                        <li><a href="#">IO</a></li>
+                        <li><a href="#">Integer</a></li>
+                        <li><a href="#">Kernel</a></li>
+                        <li><a href="#">LoadError</a></li>
+                        <li><a href="#">Method</a></li>
+                        <li><a href="#">Module</a></li>
+                        <li><a href="#">NameError</a></li>
+                        <li><a href="#">NilClass</a></li>
+                        <li><a href="#">Numeric</a></li>
+                        <li><a href="#">Object</a></li>
+                        <li><a href="#">Pathname</a></li>
+                        <li><a href="#">Process</a></li>
+                        <li><a href="#">Range</a></li>
+                        <li><a href="#">Regexp</a></li>
+                        <li><a href="#">SecureRandom</a></li>
+                        <li><a href="#">Singleton</a></li>
+                        <li><a href="#">String</a></li>
+                        <li><a href="#">Symbol</a></li>
+                        <li><a href="#">Thread</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">TrueClass</a></li>
+                        <li><a href="#">URI</a></li>
+                        <li><a href="#">UnboundMethod</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="abstractcontrollerFiles(event)">
+                        <span id="abstractcontrollerarrow" class="arrow-right"></span> AbstractController
+                    </a>
+                    <ul id="abstractcontrollerList" class="hidden">
+                        <li><a href="#">ActionNotFound</a></li>
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">Caching</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Collector</a></li>
+                        <li><a href="#">DoubleRenderError</a></li>
+                        <li><a href="#">Helpers</a></li>
+                        <li><a href="#">Railities</a></li>
+                        <li><a href="#">Rendering</a></li>
+                        <li><a href="#">Translation</a></li>
+                        <li><a href="#">UrlFor</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actioncableFiles(event)">
+                        <span id="actioncablearrow" class="arrow-right"></span> ActionCable
+                    </a>
+                    <ul id="actioncableList" class="hidden">
+                        <li><a href="#">Channel</a></li>
+                        <li><a href="#">Connection</a></li>
+                        <li><a href="#">Helpers</a></li>
+                        <li><a href="#">RemoteConnections</a></li>
+                        <li><a href="#">Server</a></li>
+                        <li><a href="#">SubscriptionAdapter</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">TestHelper</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actioncontrollerFiles(event)">
+                        <span id="actioncontrollerarrow" class="arrow-right"></span> ActionController
+                    </a>
+                    <ul id="actioncontrollerList" class="hidden">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">ApiReading</a></li>
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">Caching</a></li>
+                        <li><a href="#">ConditionalGet</a></li>
+                        <li><a href="#">ContentSecurityPolicy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">DataStreaming</a></li>
+                        <li><a href="#">DefaultHeaders</a></li>
+                        <li><a href="#">EtagWithFlash</a></li>
+                        <li><a href="#">EtagWithTemplateDigest</a></li>
+                        <li><a href="#">Flash</a></li>
+                        <li><a href="#">FormBuilder</a></li>
+                        <li><a href="#">Head</a></li>
+                        <li><a href="#">Helpers</a></li>
+                        <li><a href="#">HttpAuthentication</a></li>
+                        <li><a href="#">ImplicitRender</a></li>
+                        <li><a href="#">Instrumentation</a></li>
+                        <li><a href="#">InvalidParameterKey</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">LiveTestResponse</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">Logging</a></li>
+                        <li><a href="#">Metal</a></li>
+                        <li><a href="#">MimeResponds</a></li>
+                        <li><a href="#">MissingRenderer</a></li>
+                        <li><a href="#">ParameterEncoding</a></li>
+                        <li><a href="#">ParameterMissing</a></li>
+                        <li><a href="#">Parameters</a></li>
+                        <li><a href="#">ParamsWrapper</a></li>
+                        <li><a href="#">PermissionsPolicy</a></li>
+                        <li><a href="#">Railties</a></li>
+                        <li><a href="#">Redirecting</a></li>
+                        <li><a href="#">Renderer</a></li>
+                        <li><a href="#">Renderers</a></li>
+                        <li><a href="#">Rendering</a></li>
+                        <li><a href="#">RequestForgeryProtection</a></li>
+                        <li><a href="#">Rescue</a></li>
+                        <li><a href="#">RespondToMismatchError</a></li>
+                        <li><a href="#">Streaming</a></li>
+                        <li><a href="#">StrongParameters</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">Testing</a></li>
+                        <li><a href="#">UnfilteredParameters</a></li>
+                        <li><a href="#">UnpermittedParameters</a></li>
+                        <li><a href="#">UrlFor</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actiondispatchFiles(event)">
+                        <span id="actiondispatcharrow" class="arrow-right"></span> ActionDispatch
+                    </a>
+                    <ul id="actiondispatchList" class="hidden">
+                        <li><a href="#">AssertionResponse</a></li>
+                        <li><a href="#">Assertions</a></li>
+                        <li><a href="#">AssumeSSL</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Constants</a></li>
+                        <li><a href="#">ContentSecurityPolicy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">DebugExceptions</a></li>
+                        <li><a href="#">DebugLocks</a></li>
+                        <li><a href="#">DeprecatedIllegalStateError</a></li>
+                        <li><a href="#">ExceptionWrapper</a></li>
+                        <li><a href="#">Executor</a></li>
+                        <li><a href="#">FileHandler</a></li>
+                        <li><a href="#">Flash</a></li>
+                        <li><a href="#">HostAuthorization</a></li>
+                        <li><a href="#">Http</a></li>
+                        <li><a href="#">Integration</a></li>
+                        <li><a href="#">IntegrationTest</a></li>
+                        <li><a href="#">Journey</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">MiddlewareStack</a></li>
+                        <li><a href="#">MissingController</a></li>
+                        <li><a href="#">PermissionsPolicy</a></li>
+                        <li><a href="#">PublicExceptions</a></li>
+                        <li><a href="#">Reloader</a></li>
+                        <li><a href="#">RemoteIp</a></li>
+                        <li><a href="#">Request</a></li>
+                        <li><a href="#">RequestCookieMethods</a></li>
+                        <li><a href="#">RequestEncoder</a></li>
+                        <li><a href="#">RequestId</a></li>
+                        <li><a href="#">Response</a></li>
+                        <li><a href="#">Routing</a></li>
+                        <li><a href="#">SSL</a></li>
+                        <li><a href="#">ServerTiming</a></li>
+                        <li><a href="#">Session</a></li>
+                        <li><a href="#">ShowExceptions</a></li>
+                        <li><a href="#">Static</a></li>
+                        <li><a href="#">SystemTestCase</a></li>
+                        <li><a href="#">SystemTesting</a></li>
+                        <li><a href="#">TestProcess</a></li>
+                        <li><a href="#">TestRequest</a></li>
+                        <li><a href="#">TestResponse</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actionmailboxFiles(event)">
+                        <span id="actionmailboxarrow" class="arrow-right"></span> ActionMailBox
+                    </a>
+                    <ul id="actionmailboxList" class="hidden">
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">BaseController</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Engine</a></li>
+                        <li><a href="#">InboundEmail</a></li>
+                        <li><a href="#">IncinerationJob</a></li>
+                        <li><a href="#">Ingresses</a></li>
+                        <li><a href="#">Relayer</a></li>
+                        <li><a href="#">Router</a></li>
+                        <li><a href="#">RoutingJob</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">TestHelper</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actionmailerFiles(event)">
+                        <span id="actionmailerarrow" class="arrow-right"></span> ActionMailer
+                    </a>
+                    <ul id="actionmailerList" class="hidden">
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Collector</a></li>
+                        <li><a href="#">DeliveryMethods</a></li>
+                        <li><a href="#">FormBuilder</a></li>
+                        <li><a href="#">InlinePreviewInceptor</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">MailHelper</a></li>
+                        <li><a href="#">MessageDelivery</a></li>
+                        <li><a href="#">NonInferrableMailerError</a></li>
+                        <li><a href="#">Parameterized</a></li>
+                        <li><a href="#">Preview</a></li>
+                        <li><a href="#">Previews</a></li>
+                        <li><a href="#">QueuedDelivery</a></li>
+                        <li><a href="#">Reusable</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">TestHelper</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actiontextFiles(event)">
+                        <span id="actiontextarrow" class="arrow-right"></span> ActionText
+                    </a>
+                    <ul id="actiontextList" class="hidden">
+                        <li><a href="#">Attachable</a></li>
+                        <li><a href="#">Attachables</a></li>
+                        <li><a href="#">Attachment</a></li>
+                        <li><a href="#">AttachmentGallery</a></li>
+                        <li><a href="#">Attachments</a></li>
+                        <li><a href="#">Attribute</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">ContentHelper</a></li>
+                        <li><a href="#">EncryptedRichText</a></li>
+                        <li><a href="#">Encryption</a></li>
+                        <li><a href="#">Engine</a></li>
+                        <li><a href="#">FixtureSet</a></li>
+                        <li><a href="#">Fragment</a></li>
+                        <li><a href="#">HtmlConversion</a></li>
+                        <li><a href="#">PlainTextConversion</a></li>
+                        <li><a href="#">RichText</a></li>
+                        <li><a href="#">Serialization</a></li>
+                        <li><a href="#">SystemTestHelper</a></li>
+                        <li><a href="#">TagHelper</a></li>
+                        <li><a href="#">TrixAttachment</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="actionviewFiles(event)">
+                        <span id="actionviewarrow" class="arrow-right"></span> ActionView
+                    </a>
+                    <ul id="actionviewList" class="hidden">
+                        <li><a href="#">AbstractRenderer</a></li>
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">CacheExpiry</a></li>
+                        <li><a href="#">Context</a></li>
+                        <li><a href="#">Digestor</a></li>
+                        <li><a href="#">FileSystemResolver</a></li>
+                        <li><a href="#">FixtureResolver</a></li>
+                        <li><a href="#">Helpers</a></li>
+                        <li><a href="#">Layouts</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">LookupContext</a></li>
+                        <li><a href="#">NullResolver</a></li>
+                        <li><a href="#">PartialIteration</a></li>
+                        <li><a href="#">PartialRenderer</a></li>
+                        <li><a href="#">RecordIdentifire</a></li>
+                        <li><a href="#">Renderer</a></li>
+                        <li><a href="#">Rendering</a></li>
+                        <li><a href="#">Resolver</a></li>
+                        <li><a href="#">RoutingUrlFor</a></li>
+                        <li><a href="#">Template</a></li>
+                        <li><a href="#">TemplateDetails</a></li>
+                        <li><a href="#">TemplatePath</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">UnboundTemplate</a></li>
+                        <li><a href="#">VERSION</a></li>
+                        <li><a href="#">ViewPaths</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="activejobFiles(event)">
+                        <span id="activejobarrow" class="arrow-right"></span> ActiveJob
+                    </a>
+                    <ul id="activejobList" class="hidden">
+                        <li><a href="#">Arguments</a></li>
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Core</a></li>
+                        <li><a href="#">DeserializationError</a></li>
+                        <li><a href="#">EnqueueError</a></li>
+                        <li><a href="#">Enqueuing</a></li>
+                        <li><a href="#">Exceptions</a></li>
+                        <li><a href="#">Execution</a></li>
+                        <li><a href="#">QueueAdapter</a></li>
+                        <li><a href="#">QueueAdapters</a></li>
+                        <li><a href="#">QueueName</a></li>
+                        <li><a href="#">QueuePriority</a></li>
+                        <li><a href="#">SerializationError</a></li>
+                        <li><a href="#">Serializers</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">TestHelper</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="activemodelFiles(event)">
+                        <span id="activemodelarrow" class="arrow-right"></span> ActiveModel
+                    </a>
+                    <ul id="activemodelList" class="hidden">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">AttributeAssignment</a></li>
+                        <li><a href="#">AttributeMethods</a></li>
+                        <li><a href="#">Attributes</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Conversion</a></li>
+                        <li><a href="#">Dirty</a></li>
+                        <li><a href="#">EachValidator</a></li>
+                        <li><a href="#">Error</a></li>
+                        <li><a href="#">Errors</a></li>
+                        <li><a href="#">ForbiddenAttributeError</a></li>
+                        <li><a href="#">Lint</a></li>
+                        <li><a href="#">MissingAttributeError</a></li>
+                        <li><a href="#">Model</a></li>
+                        <li><a href="#">Name</a></li>
+                        <li><a href="#">Naming</a></li>
+                        <li><a href="#">NestedError</a></li>
+                        <li><a href="#">RangeError</a></li>
+                        <li><a href="#">SecurePassword</a></li>
+                        <li><a href="#">Serialization</a></li>
+                        <li><a href="#">Serializers</a></li>
+                        <li><a href="#">StrictValidationFailed</a></li>
+                        <li><a href="#">Translation</a></li>
+                        <li><a href="#">Type</a></li>
+                        <li><a href="#">UnknownAttributeError</a></li>
+                        <li><a href="#">VERSION</a></li>
+                        <li><a href="#">ValidationError</a></li>
+                        <li><a href="#">Validations</a></li>
+                        <li><a href="#">Validator</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="activerecordFiles(event)">
+                        <span id="activerecordarrow" class="arrow-right"></span> ActiveRecord
+                    </a>
+                    <ul id="activerecordList" class="hidden">
+                        <li><a href="#">ActiveRecordError</a></li>
+                        <li><a href="#">AdapterError</a></li>
+                        <li><a href="#">AdapterNotFound</a></li>
+                        <li><a href="#">AdapterNotSpecified</a></li>
+                        <li><a href="#">AdapterTimeout</a></li>
+                        <li><a href="#">Aggregations</a></li>
+                        <li><a href="#">AssociationTypeMismatch</a></li>
+                        <li><a href="#">Associations</a></li>
+                        <li><a href="#">AsynchronousQueryInsideTransactionError</a></li>
+                        <li><a href="#">AttributeAssignment</a></li>
+                        <li><a href="#">AttributeAssignmentError</a></li>
+                        <li><a href="#">AttributeMethods</a></li>
+                        <li><a href="#">Attributes</a></li>
+                        <li><a href="#">AutosaveAssociation</a></li>
+                        <li><a href="#">Base</a></li>
+                        <li><a href="#">Batches</a></li>
+                        <li><a href="#">Calculations</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">Coders</a></li>
+                        <li><a href="#">ConfigurationError</a></li>
+                        <li><a href="#">ConnectionAdapters</a></li>
+                        <li><a href="#">ConnectionFailed</a></li>
+                        <li><a href="#">ConnectionHandling</a></li>
+                        <li><a href="#">ConnectionNotEstabalished</a></li>
+                        <li><a href="#">ConnectionTimeoutError</a></li>
+                        <li><a href="#">Core</a></li>
+                        <li><a href="#">CounterCache</a></li>
+                        <li><a href="#">DangerousAttributeError</a></li>
+                        <li><a href="#">DatabaseAlreadyExists</a></li>
+                        <li><a href="#">DatabaseConfigurations</a></li>
+                        <li><a href="#">DatabaseConnectionError</a></li>
+                        <li><a href="#">Deadlocked</a></li>
+                        <li><a href="#">DelegatedType</a></li>
+                        <li><a href="#">DestroyAssociationAsyncError</a></li>
+                        <li><a href="#">DestroyAssociationAsyncJob</a></li>
+                        <li><a href="#">DynamicMatchers</a></li>
+                        <li><a href="#">EagerLoadPolymorphicError</a></li>
+                        <li><a href="#">Encryption</a></li>
+                        <li><a href="#">Enum</a></li>
+                        <li><a href="#">EnvironmentMismatchError</a></li>
+                        <li><a href="#">ExclusiveConnectionTimeoutError</a></li>
+                        <li><a href="#">Explain</a></li>
+                        <li><a href="#">FinderMethods</a></li>
+                        <li><a href="#">FixtureSet</a></li>
+                        <li><a href="#">FixtureResult</a></li>
+                        <li><a href="#">ImmutableRelation</a></li>
+                        <li><a href="#">Inheritance</a></li>
+                        <li><a href="#">Integration</a></li>
+                        <li><a href="#">InvalidForeignKey</a></li>
+                        <li><a href="#">IrreversibleMigration</a></li>
+                        <li><a href="#">IrreversibleOrderError</a></li>
+                        <li><a href="#">LockWaitTimeout</a></li>
+                        <li><a href="#">Locking</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">Marshalling</a></li>
+                        <li><a href="#">MessagePack</a></li>
+                        <li><a href="#">Middleware</a></li>
+                        <li><a href="#">Migration</a></li>
+                        <li><a href="#">MigrationContext</a></li>
+                        <li><a href="#">MismatchedForeignKey</a></li>
+                        <li><a href="#">ModelSchema</a></li>
+                        <li><a href="#">MultiparameterAssignmentErrors</a></li>
+                        <li><a href="#">NestedAttributes</a></li>
+                        <li><a href="#">NoDatabaseError</a></li>
+                        <li><a href="#">NoTouching</a></li>
+                        <li><a href="#">Normalization</a></li>
+                        <li><a href="#">NotNullViolation</a></li>
+                        <li><a href="#">Persistene</a></li>
+                        <li><a href="#">PreparedStatementCacheExpired</a></li>
+                        <li><a href="#">PreparedStatementInvalid</a></li>
+                        <li><a href="#">Promise</a></li>
+                        <li><a href="#">QueryAborted</a></li>
+                        <li><a href="#">QueryCache</a></li>
+                        <li><a href="#">QueryCanceled</a></li>
+                        <li><a href="#">QueryLogs</a></li>
+                        <li><a href="#">QueryMethods</a></li>
+                        <li><a href="#">Querying</a></li>
+                        <li><a href="#">RangeError</a></li>
+                        <li><a href="#">ReadOnlyError</a></li>
+                        <li><a href="#">ReadOnlyRecord</a></li>
+                        <li><a href="#">ReadonlyAttributeError</a></li>
+                        <li><a href="#">ReadonlyAttributes</a></li>
+                        <li><a href="#">RecordInvalid</a></li>
+                        <li><a href="#">RecordNotDestroyed</a></li>
+                        <li><a href="#">RecordNotSaved</a></li>
+                        <li><a href="#">RecordNotUnique</a></li>
+                        <li><a href="#">Reflection</a></li>
+                        <li><a href="#">Relation</a></li>
+                        <li><a href="#">Result</a></li>
+                        <li><a href="#">Rollback</a></li>
+                        <li><a href="#">SQLWarning</a></li>
+                        <li><a href="#">Sanitization</a></li>
+                        <li><a href="#">Schema</a></li>
+                        <li><a href="#">Scoping</a></li>
+                        <li><a href="#">SecurePassword</a></li>
+                        <li><a href="#">SecureToken</a></li>
+                        <li><a href="#">Serialization</a></li>
+                        <li><a href="#">SerializationFailure</a></li>
+                        <li><a href="#">SerializationTypeMismatch</a></li>
+                        <li><a href="#">SignedId</a></li>
+                        <li><a href="#">SoleRecordExceeded</a></li>
+                        <li><a href="#">SpawnMethods</a></li>
+                        <li><a href="#">StaleObjectError</a></li>
+                        <li><a href="#">StatementCache</a></li>
+                        <li><a href="#">StatementInvalid</a></li>
+                        <li><a href="#">StatementTimeout</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">StrictLoadingViolationError</a></li>
+                        <li><a href="#">SubclassNotFound</a></li>
+                        <li><a href="#">Supperssor</a></li>
+                        <li><a href="#">TableNotSpecified</a></li>
+                        <li><a href="#">Tasks</a></li>
+                        <li><a href="#">TestFixtures</a></li>
+                        <li><a href="#">Timestamp</a></li>
+                        <li><a href="#">TokenFor</a></li>
+                        <li><a href="#">TransactionIsolationError</a></li>
+                        <li><a href="#">TransactionRollbackError</a></li>
+                        <li><a href="#">Transactions</a></li>
+                        <li><a href="#">Translation</a></li>
+                        <li><a href="#">Type</a></li>
+                        <li><a href="#">UnknownAttributeError</a></li>
+                        <li><a href="#">UnknownAttributeReference</a></li>
+                        <li><a href="#">UnknownPrimaryKey</a></li>
+                        <li><a href="#">VERSION</a></li>
+                        <li><a href="#">Validations</a></li>
+                        <li><a href="#">ValueTooLong</a></li>
+                        <li><a href="#">WrappedDatabaseException</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="activestorageFiles(event)">
+                        <span id="activestoragearrow" class="arrow-right"></span> ActiveStorage
+                    </a>
+                    <ul id="activestorageList" class="hidden">
+                        <li><a href="#">AnalyzeJob</a></li>
+                        <li><a href="#">Analyzer</a></li>
+                        <li><a href="#">Attached</a></li>
+                        <li><a href="#">Attachment</a></li>
+                        <li><a href="#">BaseController</a></li>
+                        <li><a href="#">BaseJob</a></li>
+                        <li><a href="#">Blob</a></li>
+                        <li><a href="#">Blobs</a></li>
+                        <li><a href="#">DirectUploadsController</a></li>
+                        <li><a href="#">DisableSession</a></li>
+                        <li><a href="#">DiskController</a></li>
+                        <li><a href="#">Error</a></li>
+                        <li><a href="#">FileNotFoundError</a></li>
+                        <li><a href="#">Filename</a></li>
+                        <li><a href="#">FixtureSet</a></li>
+                        <li><a href="#">IntegrityError</a></li>
+                        <li><a href="#">InvariableError</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">MirrorJob</a></li>
+                        <li><a href="#">Preview</a></li>
+                        <li><a href="#">PreviewError</a></li>
+                        <li><a href="#">Previewer</a></li>
+                        <li><a href="#">PurgeJob</a></li>
+                        <li><a href="#">Reflection</a></li>
+                        <li><a href="#">Representations</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">SetCurrent</a></li>
+                        <li><a href="#">Streaming</a></li>
+                        <li><a href="#">TransformJob</a></li>
+                        <li><a href="#">Transformers</a></li>
+                        <li><a href="#">UnpreviewableError</a></li>
+                        <li><a href="#">UnrepresentableError</a></li>
+                        <li><a href="#">VERSION</a></li>
+                        <li><a href="#">Variant</a></li>
+                        <li><a href="#">VariantRecord</a></li>
+                        <li><a href="#">VariantWithRecord</a></li>
+                        <li><a href="#">Variation</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="activesupportFiles(event)">
+                        <span id="activesupportarrow" class="arrow-right"></span> ActiveSupport
+                    </a>
+                    <ul id="activesupportList" class="hidden">
+                        <li><a href="#">ActionableError</a></li>
+                        <li><a href="#">ArrayInquirer</a></li>
+                        <li><a href="#">Autoload</a></li>
+                        <li><a href="#">BacktraceCleaner</a></li>
+                        <li><a href="#">Benchmarkable</a></li>
+                        <li><a href="#">BroadcastLogger</a></li>
+                        <li><a href="#">Cache</a></li>
+                        <li><a href="#">CachingKeyGenerator</a></li>
+                        <li><a href="#">Callbacks</a></li>
+                        <li><a href="#">CodeGenerator</a></li>
+                        <li><a href="#">CompareWithRange</a></li>
+                        <li><a href="#">Concern</a></li>
+                        <li><a href="#">Concurrency</a></li>
+                        <li><a href="#">Configurable</a></li>
+                        <li><a href="#">ConfigurationFile</a></li>
+                        <li><a href="#">CoreExt</a></li>
+                        <li><a href="#">CurrentAttributes</a></li>
+                        <li><a href="#">Dependencies</a></li>
+                        <li><a href="#">Deprication</a></li>
+                        <li><a href="#">DepricationException</a></li>
+                        <li><a href="#">DescendantsTracker</a></li>
+                        <li><a href="#">Duration</a></li>
+                        <li><a href="#">EncryptedConfiguration</a></li>
+                        <li><a href="#">EncryptedFile</a></li>
+                        <li><a href="#">EnumerableCoreExt</a></li>
+                        <li><a href="#">ErrorReporter</a></li>
+                        <li><a href="#">EventedFileUpdatedChecker</a></li>
+                        <li><a href="#">ExecutionWrapper</a></li>
+                        <li><a href="#">Executor</a></li>
+                        <li><a href="#">FileUpdateChecker</a></li>
+                        <li><a href="#">ForkTracker</a></li>
+                        <li><a href="#">Gzip</a></li>
+                        <li><a href="#">HashWithIndifferentAccess</a></li>
+                        <li><a href="#">Inflector</a></li>
+                        <li><a href="#">InheritableOptions</a></li>
+                        <li><a href="#">JSON</a></li>
+                        <li><a href="#">KeyGenerator</a></li>
+                        <li><a href="#">LazyLoadHooks</a></li>
+                        <li><a href="#">LogSubscriber</a></li>
+                        <li><a href="#">Logger</a></li>
+                        <li><a href="#">LoggerSilence</a></li>
+                        <li><a href="#">MessageEncryptor</a></li>
+                        <li><a href="#">MessageEncryptors</a></li>
+                        <li><a href="#">MessagePack</a></li>
+                        <li><a href="#">MessageVerifier</a></li>
+                        <li><a href="#">MessageVerifiers</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Multibyte</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">NumberHelper</a></li>
+                        <li><a href="#">NumericWithFormat</a></li>
+                        <li><a href="#">OrderedOptions</a></li>
+                        <li><a href="#">ParameterFilter</a></li>
+                        <li><a href="#">ProxyObject</a></li>
+                        <li><a href="#">RangeWithFormat</a></li>
+                        <li><a href="#">Reloader</a></li>
+                        <li><a href="#">Rescuable</a></li>
+                        <li><a href="#">SafeBuffer</a></li>
+                        <li><a href="#">SecureCompareRotator</a></li>
+                        <li><a href="#">SecurityUtils</a></li>
+                        <li><a href="#">StringInquirer</a></li>
+                        <li><a href="#">Subscriber</a></li>
+                        <li><a href="#">TaggedLogging</a></li>
+                        <li><a href="#">TestCase</a></li>
+                        <li><a href="#">Testing</a></li>
+                        <li><a href="#">TimeWithZone</a></li>
+                        <li><a href="#">TimeZone</a></li>
+                        <li><a href="#">VERSION</a></li>
+                        <li><a href="#">XMLConverter</a></li>
+                        <li><a href="#">XmlMini</a></li>
+                        <li><a href="#">XmlMini_LibXMLSAX</a></li>
+                        <li><a href="#">XmlMini_NokogiriSAX</a></li>
+                    </ul>
+                </li>
+
+                <li style="padding-left: 20px;">
+                    <a href="#">Arel</a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="mailFiles(event)">
+                        <span id="mailarrow" class="arrow-right"></span> Mail
+                    </a>
+                    <ul id="mailList" class="hidden">
+                        <li><a href="#">Address</a></li>
+                        <li><a href="#">Message</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="mimeFiles(event)">
+                        <span id="mimearrow" class="arrow-right"></span> Mime
+                    </a>
+                    <ul id="mimeList" class="hidden">
+                        <li><a href="#">AllType</a></li>
+                        <li><a href="#">Mimes</a></li>
+                        <li><a href="#">NullType</a></li>
+                        <li><a href="#">Type</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="minitestFiles(event)">
+                        <span id="minitestarrow" class="arrow-right"></span> Minitest
+                    </a>
+                    <ul id="minitestList" class="hidden">
+                        <li><a href="#">BcktraceFilterWithFallback</a></li>
+                        <li><a href="#">ProfileReporter</a></li>
+                        <li><a href="#">SuppressedSummaryReporter</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="railsFiles(event)">
+                        <span id="railsarrow" class="arrow-right"></span> Rails
+                    </a>
+                    <ul id="railsList" class="hidden">
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">AppBuilder</a></li>
+                        <li><a href="#">Application</a></li>
+                        <li><a href="#">Command</a></li>
+                        <li><a href="#">Console</a></li>
+                        <li><a href="#">ConsoleMethods</a></li>
+                        <li><a href="#">DBConsole</a></li>
+                        <li><a href="#">Engine</a></li>
+                        <li><a href="#">Generators</a></li>
+                        <li><a href="#">HealthController</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Initializable</a></li>
+                        <li><a href="#">Paths</a></li>
+                        <li><a href="#">PluginBuilder</a></li>
+                        <li><a href="#">Rack</a></li>
+                        <li><a href="#">Railtie</a></li>
+                        <li><a href="#">Secrets</a></li>
+                        <li><a href="#">Server</a></li>
+                        <li><a href="#">SourceAnnotationExtractor</a></li>
+                        <li><a href="#">VERSION</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </aside>
         <main class="content">
+            <div class="version-sticker">v7.1.3.4</div>
             <div class="header">
                 <h1>Ruby on Rails 7.1.3.4</h1>
                 <p>RDoc_MAIN.md</p>
@@ -42,14 +733,55 @@
             <section>
                 <h2>Welcome to Rails</h2>
                 <h3>What's Rails?</h3>
-                <p>Rails is a web-application framework that includes everything needed to create database-backed web applications according to the <a href="#">Model-View-Controller (MVC)</a> pattern.</p>
+                <p>Rails is a web-application framework that includes everything needed to create database-backed web applications according to the <a href="https://en.wikipedia.org/wiki/Model-view-controller">Model-View-Controller (MVC)</a> pattern.</p>
                 <p>Understanding the MVC pattern is key to understanding Rails. MVC divides your application into three layers: Model, View, and Controller, each with a specific responsibility.</p>
                 <h3>Model layer</h3>
-                <p>The <strong><i>Model layer</i></strong> represents the domain model (such as Account, Product, Person, Post, etc.) and encapsulates the business logic specific to your application. In Rails, database-backed model classes are derived from <code>ActiveRecord::Base</code>. <a href="#">Active Record</a> allows you to present the data from database rows as objects and embellish these data objects with business logic methods. Although most Rails models are backed by a database, models can also be ordinary Ruby classes, or Ruby classes that implement a set of interfaces as provided by the <a href="#">Active Model</a> module.</p>
+                <p>The <strong><i>Model layer</i></strong> represents the domain model (such as Account, Product, Person, Post, etc.) and encapsulates the business logic specific to your application. In Rails, database-backed model classes are derived from <code>ActiveRecord::Base</code>. <a href="https://api.rubyonrails.org/files/activerecord/README_rdoc.html">Active Record</a> allows you to present the data from database rows as objects and embellish these data objects with business logic methods. Although most Rails models are backed by a database, models can also be ordinary Ruby classes, or Ruby classes that implement a set of interfaces as provided by the <a href="https://api.rubyonrails.org/files/activemodel/README_rdoc.html">Active Model</a> module.</p>
                 <h3>View layer</h3>
-                <p>The <strong><i>View layer</i></strong> is composed of “templates” that are responsible for providing appropriate representations of your application's resources. Templates can come in a variety of formats, but most view templates are HTML with embedded Ruby code (ERB files). Views are typically rendered to generate a controller response or to generate the body of an email. In Rails, View generation is handled by <a href="#">Action View</a>.</p>
+                <p>The <strong><i>View layer</i></strong> is composed of “templates” that are responsible for providing appropriate representations of your application's resources. Templates can come in a variety of formats, but most view templates are HTML with embedded Ruby code (ERB files). Views are typically rendered to generate a controller response or to generate the body of an email. In Rails, View generation is handled by <a href="https://api.rubyonrails.org/files/actionview/README_rdoc.html">Action View</a>.</p>
                 <h3>Controller layer</h3>
-                <p>The <strong><i>Controller layer</i></strong> is responsible for handling incoming HTTP requests and providing a suitable response. Usually, this means returning HTML, but Rails controllers can also generate XML, JSON, PDFs, mobile-specific views, and more. Controllers load and manipulate models, and render view templates in order to generate the appropriate HTTP response. In Rails, incoming requests are routed by Action Dispatch to an appropriate controller, and controller classes are derived from <code>ActionController::Base</code>. Action Dispatch and Action Controller are bundled together in <a href="#">Action Pack</a>.</p>
+                <p>The <strong><i>Controller layer</i></strong> is responsible for handling incoming HTTP requests and providing a suitable response. Usually, this means returning HTML, but Rails controllers can also generate XML, JSON, PDFs, mobile-specific views, and more. Controllers load and manipulate models, and render view templates in order to generate the appropriate HTTP response. In Rails, incoming requests are routed by Action Dispatch to an appropriate controller, and controller classes are derived from <code>ActionController::Base</code>. Action Dispatch and Action Controller are bundled together in <a href="https://api.rubyonrails.org/files/actionpack/README_rdoc.html">Action Pack</a>.</p>
+                <h3>Frameworks and libraries</h3>
+                <p><a href="https://api.rubyonrails.org/files/activerecord/README_rdoc.html">Active Record</a>, <a href="https://api.rubyonrails.org/files/activemodel/README_rdoc.html">Active Model</a>,<a href="https://api.rubyonrails.org/files/actionpack/README_rdoc.html">Action Pack</a>, and <a href="https://api.rubyonrails.org/files/actionview/README_rdoc.html">Action View</a> can each be used independently outside Rails.</p>
+                <p>In addition to that, Rails also comes with:</p>
+                <ul>
+                    <li><a href="https://api.rubyonrails.org/files/actionmailer/README_rdoc.html">Action Mailer</a>, a library to generate and send emails.</li>
+                    <li><a href="https://api.rubyonrails.org/files/actionmailbox/README_md.html">Action Mailbox</a>, a library to receive emails within a Rails application.</li>
+                    <li><a href="https://api.rubyonrails.org/files/activejob/README_md.html">Active Job</a>, a framework for declaring jobs and making them run on a variety of queuing backends.</li>
+                    <li><a href="https://api.rubyonrails.org/files/actioncable/README_md.html">Action Cable</a>, a framework to integrate WebSockets with a Rails application.</li>
+                    <li><a href="https://api.rubyonrails.org/files/activestorage/README_md.html">Active Storage</a>, a library to attach cloud and local files to Rails applications.</li>
+                    <li><a href="https://api.rubyonrails.org/files/actiontext/README_md.html">Action Text</a>, a library to handle rich text content.</li>
+                    <li><a href="https://api.rubyonrails.org/files/activesupport/README_rdoc.html">Active Support</a>, a collection of utility classes and standard library extensions that are useful for Rails, and may also be used independently outside Rails.</li>
+                </ul>
+                <h3>Getting Started</h3>
+                <ol>
+                    <li>Install Rails at the command prompt if you haven't yet:
+                        <div class="code-block"><code>$ gem install rails</code></div>
+                    </li>
+                    <li>At the command prompt, create a new Rails application:
+                        <div class="code-block"><code>$ rails new myapp</code></div>
+                        where "myapp" is the application name.
+                    </li>
+                    <li>Change directory to <code>myapp</code> and start the web server:
+                        <div class="code-block"><code>$ cd myapp<br>$ rails server</code></div>
+                        Run with <code>--help</code> or <code>-h</code> for options.
+                    </li>
+                    <li>Go to <code>http://localhost:3000</code> and you'll see the Rails bootscreen with your Rails and Ruby versions.</li>
+                    <li>Follow the guidelines to start developing your application. You may find the following resources handy:
+                        <ol>
+                            <li><a href="https://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a></li>
+                            <li><a href="https://guides.rubyonrails.org/index.html">Ruby on Rails Guides</a></li>
+                            <li><a href="api.html">The API Documentation</a></li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <h3>Contributing</h3>
+                <p>We encourage you to contribute to Ruby on Rails! Please check out the <a href="https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html">Contributing to Ruby on Rails guide</a> for guidelines about how to proceed. <a href="https://contributors.rubyonrails.org/">Join us!</a></p>
+                <p>Trying to report a possible security vulnerability in Rails? Please check out our <a href="https://rubyonrails.org/security">security policy</a> for guidelines about how to proceed.</p>
+                <p>Everyone interacting in Rails and its sub-projects’ codebases, issue trackers, chat rooms, and mailing lists is expected to follow the Rails <a href="https://rubyonrails.org/conduct">code of conduct.</a></p>
+                <h3>License</h3>
+                <p>Ruby on Rails is released under the <a href="https://opensource.org/license/MIT">MIT License.</a></p>
             </section>
         </main>
     </div>
