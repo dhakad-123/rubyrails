@@ -13,11 +13,16 @@ body {
 .sidebar {
     background: color #f0f0f0;
     color: #000; /* black text */
-    border-right: 1px solid #444;
-    padding: 20px;
-    width: 900px;
+    /* border-right: 1px solid #444; */
+    /* padding: 20px; */
+    width: 1500px;
     height: 100vh;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    border-right: 1px solid #dee2e6; 
+    overflow-y: auto; 
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
 }
 
 .sidebar ul {
@@ -27,10 +32,12 @@ body {
 
 .sidebar ul ul {
     padding-left: 20px;
+    font-size: 20px;
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 20px;
 }
 
 .sidebar ul li a {
@@ -70,15 +77,35 @@ body {
     font-size: 14px;
 }
 
+.version-sticker {
+    position: fixed;
+    top: 20px;
+    right: -60px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    transform: rotate(45deg);
+    z-index: 1000;
+}
+
 section h2, section h3 {
     color: #000;
     margin-left: 50px;
     font-size: 25px;
 }
 
-section p {
+section p , ol {
     margin-right: 100px;
     margin-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+section ul {
+    margin-right: 100px;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 a {
@@ -100,6 +127,15 @@ a:hover {
     margin-right: 5px;
 }
 
+.code-block {
+    overflow-x: auto;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    white-space: nowrap;
+}
+
 code {
     background-color: #f4f4f4;
     padding: 2px 4px;
@@ -112,5 +148,169 @@ code {
 }
 
 #filesList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#coreList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#coreList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#abstractcontrollerList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#abstractcontrollerList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+/* .sidebar li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+.sidebar li:nth-child(even) {
+    background-color: #ffffff;
+}  */
+
+#sidebar .search-bar {
+    margin-bottom: 20px;
+}
+
+#sidebar .search-bar input[type="text"] {
+    width: 1500px;
+    /* padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box; */
+} 
+
+#actioncableList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actioncableList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actioncontrollerList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actioncontrollerList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actiondispatchList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actiondispatchList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actionmailboxList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actionmailboxList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actionmailerList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actionmailerList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actiontextList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actiontextList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#actionviewList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#actionviewList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#activejobList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#activejobList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#activemodelList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#activemodelList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#activerecordList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#activerecordList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#activestorageList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#activestorageList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#activesupportList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#activesupportList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#mailList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#mailList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#mimeList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#mimeList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#minitestList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#minitestList li:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+#railsList li:nth-child(odd) {
+    background-color: #f0f0f0; 
+}
+
+#railsList li:nth-child(even) {
     background-color: #ffffff; 
 }
