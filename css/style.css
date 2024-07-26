@@ -1,83 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Public+Sans&display=swap');
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
-.rails_logo {
-    height: 7rem;
-    width: 7rem;
-    background-color: rgb(213, 21, 21);
-    border-radius: 50%;
-    
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden; 
-    /*margin-left: 46%;*/
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-    
- }
-    .rails_logo:hover{
-      background-color: rgb(20, 18, 25);
-    }
-    .logo_img{
-        height: 80%;
-        width: 82%;
-        object-fit: contain;
-        margin-bottom: 9px;
-    }
-.heading_common1 {
-   /* text-align: center;  Centers text inside the div */
-    padding: 0; /* Add padding for spacing */
-    margin-top: 0vmin; 
-    margin-bottom: 8px;
-    margin-left:center;
+.layout {
+    text-align: center; /* Center-aligns the content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 0px;
   }
-  .common-heading{
-    color: rgb(213, 21, 21);
-   
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-      font-size: 4em;
-      /*margin-bottom: 5px;
-      margin-top: 5px;*/
-      text-align: center;
-      color: #D30001;
-    
-   
-}
-.common-subheading{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 438;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-      font-size: 30px;
-      margin-top:0;
-      margin-bottom: 5px;
-    
-}
 
 .top-banner {
     background-color: #efe5e5; /* Dark grey background */
     color: #000; /* Black text */
     text-align: center;
-    padding: 12px 0;
-   
-    font-size: 1.1em;
+    padding: 26px 0;
+    font-size: 25px;
     font-weight: 800; /* Bold text */
     transition: color 0.3s; /* Smooth transition for text color on hover */
 }
@@ -89,8 +27,8 @@ body {
 .navbar {
     background-color: none; /* Remove background color */
     color: #000; /* Dark black text color */
-    font-size: 1.1em; /* Increase font size */
-    margin-top: 5px; /* Add top margin */
+    font-size: 25px; /* Increase font size */
+    margin-top: 100px; /* Add top margin */
     position: relative; /* Ensure navbar is relative */
     padding: 15px 0; /* Adjust padding */
     text-align: center; /* Center navbar content */
@@ -120,8 +58,6 @@ body {
 
 .navbar ul li a:hover {
     color: #D2232A; /* Red text color on hover */
-    
-    
 }
 
 .navbar ul li a:hover::after {
@@ -149,7 +85,7 @@ body {
 
 main {
     text-align: center;
-    padding: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -159,7 +95,7 @@ h1 {
     max-width: 80%; /* Limit width to 80% of the viewport width */
     word-wrap: break-word; /* Wrap text onto multiple lines */
     color: #d7040b;
-    margin-left: 290px; 
+    margin-left: 260px; 
     margin-right: 260px; /* Adjust left and right margins */
     margin-top: 0; /* Reset top margin */
 }
@@ -170,16 +106,14 @@ p {
 }
 
 .version {
-    color: #222121;
+    color: #666;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 1.3em; /* Increase font size */
-    background-color: rgb(241, 231, 229) ; /* Grey background */
+    font-size: 2.1em; /* Increase font size */
+    background-color: #f4f4f4; /* Grey background */
     display: inline-block; /* Ensure block-like behavior */
-    padding: 10px 10px; /* Padding for better readability */
+    padding: 5px 10px; /* Padding for better readability */
     transition: background-color 0.3s; /* Smooth transition for background color */
-    border-radius: 5px;
-    border: none;
 }
 
 .version:hover {
@@ -200,8 +134,10 @@ video {
 }
 
 .heading-section {
-    padding: 30px 20px;
+    padding: 40px 20px;
     text-align: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .heading-section h1 {
@@ -211,8 +147,12 @@ video {
 }
 
 .heading-section p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 2.3em;
+    color: #030000;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    
 }
 
 .heading-section p a {
@@ -311,7 +251,7 @@ video {
     margin-top: 20px;
 }
 
-.company-logos {
+/*.company-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -331,17 +271,61 @@ video {
 
 .company-logos img:hover {
     transform: scale(1.1);
-    outline: 3px solid red; /* Red outline on hover */
-}
+    outline: 3px solid red; }*/
+
+    .company-logos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Four columns */
+        gap: -2000px; /* Gap between grid items */
+        justify-items: center; /* Center items horizontally */
+        margin-left: 600px;
+        margin-right: 600px;
+        max-width: 1600px;
+
+    }
+
+.button-large-type1{
+    width: 130px;
+    height: 60px;
+    border-radius: 5px;
+    margin:10px;
+    background-color:rgb(241, 231, 229) ;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0; /* Ensure no padding */
+    background-color: hsl(345, 11%, 86%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+  }
+  .button-large-type1 img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    
+  }
+  .button-large-type1:hover{
+  transform: translateY(-2px);
+  outline: 3px solid red;
+  background-color: #ffffff;    
+  }  
+  .button-container{
+    margin-left: 50px;
+  }
+
+
 
 .code-section {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns layout */
-    gap: 20px; /* Gap between items */
-    padding: 20px; /* Padding around the section */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Ensure code containers are responsive */
 .code-container {
     background-color: rgb(230, 217, 217);
     border-radius: 8px;
@@ -358,7 +342,7 @@ video {
 }
 
 .code-block img {
-    max-width: 100%;
+    max-width: 100%; /* Changed from 200% to 100% to fit within the container */
     height: auto;
 }
 
@@ -369,82 +353,55 @@ video {
 .code-description h3 {
     color: #b40b06;
     margin-top: 0;
-    font-size: 2em;
+    font-size: 2em; /* Corrected from 'font: size 80px' to 'font-size: 2em' */
 }
 
 .code-description p {
     color: #555;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjust font size as needed */
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .code-section {
-        grid-template-columns: 1fr 1fr; /* Two columns for tablets and small desktops */
-        gap: 15px; /* Reduce gap between items */
-    }
-}
-
-@media (max-width: 768px) {
-    .code-section {
-        grid-template-columns: 1fr; /* Single column for mobile devices */
-        gap: 15px; /* Reduce gap between items */
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .code-section {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-        gap: 10px; /* Further reduce gap between items */
-        padding: 10px; /* Further adjust padding */
-    }
-}
 
 .cards {
     font-size: 0;
     line-height: 0;
     margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    position: relative
+    
 }
 
 .cards .container {
-    max-width: 1500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 1500px
 }
 
 .cards__container {
     display: grid;
-    gap: 30px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1200px; /* Add a max-width to control the layout */
-    padding: 0 20px; /* Add padding to provide some space on the sides */
+    gap: 30px 0;
+    margin-left: 900px;
+    margin: 3px 30px;
+    margin-left: 90%;
+    z-index: 1
 }
 
 .cards .card {
-    position: relative;
+    position: relative
 }
 
 .cards .card a,.cards .card__body {
-    width: 100%;
+    width: 100%
 }
 
 .cards .card a {
-    display: block;
+    display: block
 }
 
 .cards .card a:hover .card__label h6 {
-    background: #D30001;
+    background: #D30001
 }
 
 .cards .card a:hover .card__body {
     box-shadow: 0 3px 15px 2px rgba(38,27,35,0.05),0 1px 1px rgba(38,27,35,0.02),0 0 0 3px #D30001;
-    transform: translateY(-3px);
+    transform: translateY(-3px)
 }
 
 .cards .card__label {
@@ -452,7 +409,7 @@ video {
     text-align: center;
     top: -49px;
     width: 100%;
-    z-index: 1;
+    z-index: 1
 }
 
 .cards .card__label h6 {
@@ -467,7 +424,7 @@ video {
     padding: 1px 23px 3px 13px;
     position: relative;
     text-transform: uppercase;
-    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1)
 }
 
 .cards .card__label h6:after {
@@ -478,7 +435,7 @@ video {
     position: absolute;
     right: 11px;
     top: 9px;
-    width: 6px;
+    width: 6px
 }
 
 .cards .card__body {
@@ -489,18 +446,18 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1),box-shadow 0.25s cubic-bezier(0.33, 1, 0.68, 1),transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1),box-shadow 0.25s cubic-bezier(0.33, 1, 0.68, 1),transform 0.25s cubic-bezier(0.33, 1, 0.68, 1)
 }
 
 .cards .card__headline,.cards .card__content {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-right: 30px;
-    text-align: center;
+    text-align: center
 }
 
 .cards .card__headline {
     padding-bottom: 6px;
-    padding-top: 30px;
+    padding-top: 30px
 }
 
 .cards .card__headline h3 {
@@ -514,11 +471,11 @@ video {
     margin-right: auto;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1)
 }
 
 .cards .card__content {
-    padding-bottom: 35px;
+    padding-bottom: 35px
 }
 
 .cards .card__content p {
@@ -528,52 +485,34 @@ video {
     line-height: 23px;
     margin-left: auto;
     margin-right: auto;
-    transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1)
 }
 
 @media (min-width: 768px) {
     .cards__container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 40px
     }
 
     .cards .card {
         height: 40vw;
-        max-height: 300px;
+        max-height: 300px
+        
     }
 
     .cards .card a,.cards .card__body {
         height: 100%;
-        position: absolute;
+        position: absolute
     }
 }
 
 @media (min-width: 1024px) {
     .cards__container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:repeat(3, 1fr);
+        margin-left: 60px;
+        margin-right: 60px
     }
 }
-
-/* Ensuring .heading is centered */
-.heading {
-    text-align: center;
-    padding: 40px 20px; /* Add padding as needed */
-}
-
-/* Adjusting heading styles */
-.heading h1 {
-    font-size: 2.5em;
-    color: #ca141a;
-    margin: 0 auto; /* Center horizontally */
-}
-
-/* Ensure that common padding is not conflicting */
-.common-padding--bottom-small, .common-padding--top {
-    padding-bottom: 20px; /* Adjust as needed */
-    padding-top: 20px; /* Adjust as needed */
-}
-
-
 
 /* Base styles */
 
@@ -590,7 +529,7 @@ video {
 }
 
 .text__content {
-    max-width: 800px; /* Adjust max-width as needed */
+    max-width: 1600px; /* Adjust max-width as needed */
     margin: 0 auto; /* Center align */
     text-align: center; /* Center align text */
 }
