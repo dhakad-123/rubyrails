@@ -1,16 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Public+Sans&display=swap');
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
 }
+.rails_logo {
+    height: 7rem;
+    width: 7rem;
+    background-color: rgb(213, 21, 21);
+    border-radius: 50%;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; 
+    /*margin-left: 46%;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+ }
+    .rails_logo:hover{
+      background-color: rgb(20, 18, 25);
+    }
+    .logo_img{
+        height: 80%;
+        width: 82%;
+        object-fit: contain;
+        margin-bottom: 9px;
+    }
+.heading_common1 {
+   /* text-align: center;  Centers text inside the div */
+    padding: 0; /* Add padding for spacing */
+    margin-top: 0vmin; 
+    margin-bottom: 8px;
+    margin-left:center;
+  }
+  .common-heading{
+    color: rgb(213, 21, 21);
+   
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      font-size: 4em;
+      /*margin-bottom: 5px;
+      margin-top: 5px;*/
+      text-align: center;
+      color: #D30001;
+    
+   
+}
+.common-subheading{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 438;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      font-size: 30px;
+      margin-top:0;
+      margin-bottom: 5px;
+    
+}
 
 .top-banner {
     background-color: #efe5e5; /* Dark grey background */
     color: #000; /* Black text */
     text-align: center;
-    padding: 26px 0;
-    font-size: 25px;
+    padding: 12px 0;
+   
+    font-size: 1.1em;
     font-weight: 800; /* Bold text */
     transition: color 0.3s; /* Smooth transition for text color on hover */
 }
@@ -22,8 +89,8 @@ body {
 .navbar {
     background-color: none; /* Remove background color */
     color: #000; /* Dark black text color */
-    font-size: 25px; /* Increase font size */
-    margin-top: 100px; /* Add top margin */
+    font-size: 1.1em; /* Increase font size */
+    margin-top: 5px; /* Add top margin */
     position: relative; /* Ensure navbar is relative */
     padding: 15px 0; /* Adjust padding */
     text-align: center; /* Center navbar content */
@@ -53,6 +120,8 @@ body {
 
 .navbar ul li a:hover {
     color: #D2232A; /* Red text color on hover */
+    
+    
 }
 
 .navbar ul li a:hover::after {
@@ -80,7 +149,7 @@ body {
 
 main {
     text-align: center;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
@@ -101,14 +170,16 @@ p {
 }
 
 .version {
-    color: #666;
+    color: #222121;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
-    font-size: 2.1em; /* Increase font size */
-    background-color: #f4f4f4; /* Grey background */
+    font-size: 1.3em; /* Increase font size */
+    background-color: rgb(241, 231, 229) ; /* Grey background */
     display: inline-block; /* Ensure block-like behavior */
-    padding: 5px 10px; /* Padding for better readability */
+    padding: 10px 10px; /* Padding for better readability */
     transition: background-color 0.3s; /* Smooth transition for background color */
+    border-radius: 5px;
+    border: none;
 }
 
 .version:hover {
@@ -129,7 +200,7 @@ video {
 }
 
 .heading-section {
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
