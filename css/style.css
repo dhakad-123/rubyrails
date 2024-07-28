@@ -342,7 +342,6 @@ video {
 
 .company-logos img:hover {
     transform: scale(1.1);
-    outline: 3px solid red; /* Red outline on hover */
 }
 
 .company-logos {
