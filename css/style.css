@@ -458,6 +458,24 @@ margin-left: 50px;
         padding: 10px; /* Further adjust padding */
     }
 }
+/* Ensuring .heading is centered */
+.heading {
+    text-align: center;
+    padding: 40px 20px; /* Add padding as needed */
+}
+
+/* Adjusting heading styles */
+.heading h1 {
+    font-size: 2.5em;
+    color: #ca141a;
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Ensure that common padding is not conflicting */
+.common-padding--bottom-small, .common-padding--top {
+    padding-bottom: 20px; /* Adjust as needed */
+    padding-top: 20px; /* Adjust as needed */
+}
 
 .cards {
     font-size: 0;
@@ -466,10 +484,11 @@ margin-left: 50px;
     position: relative;
     display: flex;
     justify-content: center;
+    width: 1280px; /* Fixed width for 1280px */
 }
 
 .cards .container {
-    max-width: 1500px;
+    max-width: 1280px; /* Fixed width for 1280px */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -477,19 +496,33 @@ margin-left: 50px;
 
 .cards__container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed 3 columns */
     gap: 30px;
     z-index: 1;
     width: 100%;
-    max-width: 1200px; /* Add a max-width to control the layout */
-    padding: 0 20px; /* Add padding to provide some space on the sides */
+    max-width: 1200px; /* Control the layout */
+    padding: 0 20px; /* Padding to provide some space on the sides */
 }
 
 .cards .card {
     position: relative;
+    height: 200px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.cards .card a,.cards .card__body {
+.cards .card a,
+.cards .card__body {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .cards .card a {
@@ -501,7 +534,7 @@ margin-left: 50px;
 }
 
 .cards .card a:hover .card__body {
-    box-shadow: 0 3px 15px 2px rgba(38,27,35,0.05),0 1px 1px rgba(38,27,35,0.02),0 0 0 3px #D30001;
+    box-shadow: 0 3px 15px 2px rgba(38, 27, 35, 0.05), 0 1px 1px rgba(38, 27, 35, 0.02), 0 0 0 3px #D30001;
     transform: translateY(-3px);
 }
 
@@ -543,14 +576,12 @@ margin-left: 50px;
     align-items: center;
     background: #FFF;
     border-radius: 8px;
-    box-shadow: 0 3px 15px 2px rgba(38,27,35,0.05),0 1px 1px rgba(38,27,35,0.02),0 0 0 3px rgba(38,27,35,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1),box-shadow 0.25s cubic-bezier(0.33, 1, 0.68, 1),transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+    box-shadow: 0 3px 15px 2px rgba(38, 27, 35, 0.05), 0 1px 1px rgba(38, 27, 35, 0.02), 0 0 0 3px rgba(38, 27, 35, 0.1);
+    transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1), box-shadow 0.25s cubic-bezier(0.33, 1, 0.68, 1), transform 0.25s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.cards .card__headline,.cards .card__content {
+.cards .card__headline,
+.cards .card__content {
     margin-left: 50px;
     margin-right: 30px;
     text-align: center;
@@ -588,49 +619,6 @@ margin-left: 50px;
     margin-right: auto;
     transition: color 0.25s cubic-bezier(0.33, 1, 0.68, 1);
 }
-
-@media (min-width: 768px) {
-    .cards__container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-
-    .cards .card {
-        height: 40vw;
-        max-height: 300px;
-    }
-
-    .cards .card a,.cards .card__body {
-        height: 100%;
-        position: absolute;
-    }
-}
-
-@media (min-width: 1024px) {
-    .cards__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Ensuring .heading is centered */
-.heading {
-    text-align: center;
-    padding: 40px 20px; /* Add padding as needed */
-}
-
-/* Adjusting heading styles */
-.heading h1 {
-    font-size: 2.5em;
-    color: #ca141a;
-    margin: 0 auto; /* Center horizontally */
-}
-
-/* Ensure that common padding is not conflicting */
-.common-padding--bottom-small, .common-padding--top {
-    padding-bottom: 20px; /* Adjust as needed */
-    padding-top: 20px; /* Adjust as needed */
-}
-
 
 
 /* Base styles */
