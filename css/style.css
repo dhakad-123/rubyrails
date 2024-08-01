@@ -250,9 +250,9 @@ video {
 
 .grey-background {
     background-color: #e0d3d3;
-    padding-top: 6%;
+    padding-top: 3%;
     padding-bottom: 8%;
-    max-width: 100%;
+    width: 1280px;
     display: grid;
     place-items: center;
     /* text-align: center; */
@@ -263,7 +263,7 @@ video {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
     padding: 30px; /* General padding for top, bottom, left, right */
     border-radius: 8px;
-    max-width: 1200px; /* Increase max-width for a more rectangular shape */
+    width: 1180px; /* Increase max-width for a more rectangular shape */
     margin: -100px auto 60px auto; /* Top, auto (left/right to center), and bottom margin */
     text-align: left;
     position: relative;
