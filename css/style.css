@@ -250,8 +250,8 @@ video {
 
 .grey-background {
     background-color: #e0d3d3;
-    padding-top: 3%;
-    padding-bottom: 8%;
+    padding-top: 30px;
+    padding-bottom: 150px;
     width: 1280px;
     display: grid;
     place-items: center;
