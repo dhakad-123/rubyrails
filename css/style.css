@@ -6,6 +6,11 @@ body {
     padding: 0;
     color: #333;
 }
+
+.pageWrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
 .top-banner {
     background-color: #efe5e5; /* Dark grey background */
     color: #000; /* Black text */
@@ -494,8 +499,6 @@ margin-left: 50px;
 }
 
 .cards .container {
-    max-width: 1280px; /* Fixed width for 1280px */
-    width: 100%;
     display: flex;
     justify-content: center;
 }
