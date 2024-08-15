@@ -221,6 +221,8 @@ video {
     text-align: center;
     max-width: 1600px;
     margin: 0 auto;
+    position: relative;
+    
 }
 
 .heading-section h1 {
@@ -267,6 +269,7 @@ video {
     display: grid;
     place-items: center;
     /* text-align: center; */
+    margin-bottom:400px;
 }
 
 .white-box {
@@ -274,11 +277,19 @@ video {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
     padding: 30px; /* General padding for top, bottom, left, right */
     border-radius: 8px;
-    width: 1180px; /* Increase max-width for a more rectangular shape */
-    margin: -100px auto 60px auto; /* Top, auto (left/right to center), and bottom margin */
+   /* width: 1180px; /* Increase max-width for a more rectangular shape */
+   /* margin: -100px auto 60px auto; /* Top, auto (left/right to center), and bottom margin */
     text-align: left;
-    position: relative;
     z-index: 1;
+    position: absolute;
+    left: 3%; /* Center horizontally */
+    /*transform: translateX(-50%); /* Adjust for horizontal centering */
+    top: 70%; /* Position in the middle of the parent */
+   /* transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    width: 90%;
+   
+    
+    
 }
 
 .white-box h1,
@@ -408,6 +419,8 @@ margin-left: 50px;
     grid-template-columns: 1fr 1fr; /* Two columns layout */
     gap: 20px; /* Gap between items */
     padding: 20px; /* Padding around the section */
+    margin-top: 20px;
+    position: relative;
 }
 
 /* Ensure code containers are responsive */
