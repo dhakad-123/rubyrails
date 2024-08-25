@@ -6,7 +6,6 @@ body {
     padding: 0;
     color: #333;
 }
-
 .pageWrapper {
     width: 1280px;
     margin: 0 auto;
@@ -16,7 +15,7 @@ body {
     color: #000; /* Black text */
     text-align: center;
     padding: 12px 0;
-    width:1280 ;
+    width:1280px ;
     font-size: 1.1em;
     font-weight: 800; /* Bold text */
     transition: color 0.3s; /* Smooth transition for text color on hover */
@@ -755,3 +754,29 @@ footer ul li a:hover {
     filter: brightness(01); /* Turn the logo black on hover */
 }
 
+@media (max-width: 330px) {
+    
+    /*.common-heading {
+        font-size:8em;  
+    }
+    .top-banner p{
+        text-align: center;
+        font-size:2.5rem;
+        width: 60em;
+     }*/
+    }
+  
+  @media (max-width: 600px) {
+    /*.common-heading {
+        font-size:6em;
+     }
+     .top-banner{
+        height: 200px;
+     }
+     .top-banner p{
+        text-align: center;
+        font-size:2.5rem;
+        width: 60em;
+     }*/
+     
+  }
