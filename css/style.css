@@ -341,6 +341,73 @@ body {
             background-color: #ffffff;    
             } 
     }
+
+.grey-background {
+    background-color: #e0d3d3;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    /* margin: 0 auto; */
+}
+
+.grey-background h1 {
+    margin-bottom: 20px;
+    color: #D2232A; /* Red color for headings */
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.grey-background p {
+    color: #030000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 438;
     
-   
+}
+
+.grey-background p a {
+        color: #000; /* Dark black color */
+        font-weight: bold; /* Bold font */
+        text-decoration: underline; /* Add underline */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+.grey-background p a:hover {
+        color: #D2232A; /* Red color on hover */
+    }
+    
+.styled-link {
+        color: #000; /* Dark black color */
+        font-weight: 800; /* Bold font */
+        text-decoration: underline; /* Add underline */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+.styled-link:hover {
+        color: #D2232A; /* Red color on hover */
+    }
+    
+            
+            
+.white-box {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
+    padding: 30px; /* General padding for top, bottom, left, right */
+    border-radius: 8px;
+    max-width: 1200px; /* Increase max-width for a more rectangular shape */
+    margin: -100px auto 60px auto; /* Top, auto (left/right to center), and bottom margin */
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 438;
+}
+
+.white-box h1 {
+    margin-bottom: 20px;
+    color: #D2232A; /* Red color for headings */
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 900;
+}
     
