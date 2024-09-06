@@ -410,6 +410,67 @@ body {
     font-size: 2.9rem;
     font-weight: 900;
 }
+
+/*Here starts the CSS of code block*/
+.code-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+/* Ensure code containers are responsive */
+.code-container {
+    background-color: rgb(230, 217, 217);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.code-block {
+    background-color: transparent;
+    color: #f8f8f8;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.code-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.code-description {
+    padding: 15px;
+}
+
+.code-description h3 {
+    color: #b40b06;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.code-description p {
+    color: #555;
+    font-size: 1.2em;
+}
+/*Here ends the CSS for Code block*/
+
+/*Here starts the CSS for Happiness*/
+.white-box2 {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.121); /* Grey shadow effect */
+    padding: 30px; /* General padding for top, bottom, left, right */
+    border-radius: 8px;
+    max-width: 1200px; /* Increase max-width for a more rectangular shape */
+    margin: 40px auto 60px auto; /* Top and bottom margin adjusted to create space */
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+/*Here ends the CSS for Happiness*/
     
     
 /* Cards Section */
